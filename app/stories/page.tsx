@@ -46,7 +46,7 @@ export default function StoriesPage() {
           <h2 className="text-2xl font-bold mb-4">Share Your Journey</h2>
           <p className="text-emerald-200 mb-8">Completed a program? We'd love to hear about your progress.</p>
           <form onSubmit={handleFeedbackSubmit} className="space-y-4">
-            <input type="hidden" name="access_key" value="47b15f6b-74bc-4de9-98e4-e7a1f22f3550" />
+            <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY} />
             <input type="text" name="name" placeholder="Your Name" required className="w-full p-3 rounded-lg bg-emerald-800 border border-emerald-700 text-white placeholder-emerald-300 outline-none focus:ring-2 focus:ring-emerald-400" />
             <textarea name="feedback" rows={4} placeholder="What was your biggest win?" required className="w-full p-3 rounded-lg bg-emerald-800 border border-emerald-700 text-white placeholder-emerald-300 outline-none focus:ring-2 focus:ring-emerald-400" />
             <button type="submit" className="w-full py-4 bg-white text-emerald-900 font-bold rounded-lg hover:bg-emerald-50 transition-colors">

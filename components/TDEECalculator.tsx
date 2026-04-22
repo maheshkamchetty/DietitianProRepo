@@ -101,7 +101,7 @@ export default function TDEECalculator() {
       <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm mt-8">
         <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">Get Your Custom Meal Plan</h3>
         <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
-          <input type="hidden" name="access_key" value="47b15f6b-74bc-4de9-98e4-e7a1f22f3550" />
+          <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY} />
           <input type="hidden" name="subject" value="New Dietitian Lead - Custom Meal Plan Request" />
           
           <input type="text" name="name" required placeholder="Your Name" className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none text-slate-900" />

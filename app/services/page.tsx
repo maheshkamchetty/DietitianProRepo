@@ -98,7 +98,7 @@ export default function ServicesPage() {
             <p className="text-sm text-gray-500 mb-6">Submit your details to request pricing and availability for your region.</p>
             
             <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
-              <input type="hidden" name="access_key" value="47b15f6b-74bc-4de9-98e4-e7a1f22f3550" />
+              <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY} />
               <input type="hidden" name="subject" value="New Coaching Application" />
               
               <div>
